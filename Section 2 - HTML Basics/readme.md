@@ -1,3 +1,5 @@
+# Section 1 - HTML Basics
+
 ## !DOCTYPE html
 Tell the browser which type of doc is used. (in our case HTML5).
 
