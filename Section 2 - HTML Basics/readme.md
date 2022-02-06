@@ -61,6 +61,16 @@ Setting the viewport to make your website look good on all devices:
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
+``` html
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+```
+
 ### [`<strong>`](https://www.w3schools.com/tags/tag_strong.asp)
 The `<strong>` tag is used to define text with strong importance. The content inside is typically displayed in bold.
 
@@ -97,6 +107,10 @@ By default, links will appear as follows in all browsers:
 - A visited link is underlined and purple
 - An active link is underlined and red
 
+``` html
+<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+```
+
 ### [`<img>`](https://www.w3schools.com/tags/tag_img.asp)
 The `<img>` tag is used to embed an image in an HTML page.
 
@@ -111,6 +125,10 @@ Note: Also, always specify the width and height of an image. If width and height
 
 Tip: To link an image to another document, simply nest the `<img>` tag inside an `<a>` tag.
 
+``` html
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+```
+
 ### [`<ul>`](https://www.w3schools.com/tags/tag_ul.asp)
 The `<ul>` tag defines an unordered (bulleted) list.
 
@@ -120,6 +138,15 @@ Tip: Use CSS to style lists.
 
 Tip: For ordered lists, use the `<ol>` tag.
 
+``` html
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+```
+
+
 ### [`<table>`](https://www.w3schools.com/tags/tag_table.asp)
 The `<table>` tag defines an HTML table.
 
@@ -128,6 +155,19 @@ An HTML table consists of one `<table>` element and one or more `<tr>`, `<th>`, 
 The `<tr>` element defines a table row, the `<th>` element defines a table header, and the `<td>` element defines a table cell.
 
 An HTML table may also include `<caption>`, `<colgroup>`, `<thead>`, `<tfoot>`, and `<tbody>` elements.
+
+``` html
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+```
 
 ### [`<div>`](https://www.w3schools.com/tags/tag_div.asp)
 The `<div>` tag defines a division or a section in an HTML document.
