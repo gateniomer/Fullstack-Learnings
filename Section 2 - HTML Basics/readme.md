@@ -61,6 +61,28 @@ Setting the viewport to make your website look good on all devices:
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
+### [`<strong>`](https://www.w3schools.com/tags/tag_strong.asp)
+The `<strong>` tag is used to define text with strong importance. The content inside is typically displayed in bold.
+
+Tip: Use the `<b>` tag to specify bold text without any extra importance!
+
+### [`<em>`](https://www.w3schools.com/tags/tag_em.asp)
+The `<em>` tag is used to define emphasized text. The content inside is typically displayed in italic.
+
+A screen reader will pronounce the words in `<em>` with an emphasis, using verbal stress.
+
+### [`<br>`](https://www.w3schools.com/tags/tag_br.asp)
+The `<br>` tag inserts a single line break.
+
+The `<br>` tag is useful for writing addresses or poems.
+
+The `<br>` tag is an empty tag which means that it has no end tag.
+
+### [`<hr>`](https://www.w3schools.com/tags/tag_hr.asp)
+The `<hr>` tag defines a thematic break in an HTML page (e.g. a shift of topic).
+
+The `<hr>` element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page.
+
 ### [`<div>`](https://www.w3schools.com/tags/tag_div.asp)
 The `<div>` tag defines a division or a section in an HTML document.
 
@@ -79,24 +101,7 @@ The `<span>` tag is easily styled by CSS or manipulated with JavaScript using th
 
 **The `<span>` tag is much like the `<div>` element, but `<div>` is a block-level element and `<span>` is an inline element.**
 
-- strong - bold text
-- em - italic text
-- br - line break
-- hr - visible line break
-- del - add strikethrough to text
-- a - link 
-  - adding _blank to target open link in a new window
-  - adding / at href will link to another html page in the same folder
-- img - show image
-- ul - unordered list (contains li) (you can change type)
-- ol - ordered list (contains list) (you can change type)
-- table
-  - thead - the head of the table
-    - tr - table row
-      - th - table head(only for the heading)
-  - tbody
-    - tr
-      - td
+
 ## [HTML Block and Inline Elements](https://www.w3schools.com/html/html_blocks.asp)
 Every HTML element has a default display value, depending on what type of element it is.
 
