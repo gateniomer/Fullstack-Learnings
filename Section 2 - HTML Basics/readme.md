@@ -61,6 +61,24 @@ Setting the viewport to make your website look good on all devices:
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
+### [`<div>`](https://www.w3schools.com/tags/tag_div.asp)
+The `<div>` tag defines a division or a section in an HTML document.
+
+The `<div>` tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
+
+The `<div>` tag is easily styled by using the class or id attribute.
+
+Any sort of content can be put inside the `<div>` tag! 
+
+Note: By default, browsers always place a line break before and after the `<div>` element.
+
+### [`<span>`](https://www.w3schools.com/tags/tag_span.asp)
+The `<span>` tag is an inline container used to mark up a part of a text, or a part of a document.
+
+The `<span>` tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+
+**The `<span>` tag is much like the `<div>` element, but `<div>` is a block-level element and `<span>` is an inline element.**
+
 - strong - bold text
 - em - italic text
 - br - line break
@@ -99,24 +117,6 @@ An inline element does not start on a new line.
 An inline element only takes up as much width as necessary.
 
 This is a `<span>` element inside a paragraph.
-
-## [Div](https://www.w3schools.com/tags/tag_div.asp)
-The `<div>` tag defines a division or a section in an HTML document.
-
-The `<div>` tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
-
-The `<div>` tag is easily styled by using the class or id attribute.
-
-Any sort of content can be put inside the `<div>` tag! 
-
-Note: By default, browsers always place a line break before and after the `<div>` element.
-
-## [Span](https://www.w3schools.com/tags/tag_span.asp)
-The `<span>` tag is an inline container used to mark up a part of a text, or a part of a document.
-
-The `<span>` tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
-
-**The `<span>` tag is much like the `<div>` element, but `<div>` is a block-level element and `<span>` is an inline element.**
 
 ## [Class](https://www.w3schools.com/html/html_classes.asp)
 The HTML class attribute is used to specify a class for an HTML element.
