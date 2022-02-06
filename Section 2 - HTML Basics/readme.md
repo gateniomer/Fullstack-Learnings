@@ -1,5 +1,17 @@
 # Section 1 - HTML Basics
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+</head>
+<body>
 
+</body>
+</html>
+```
 ## [HTML Tags](https://www.w3schools.com/tags/default.asp)
 
 ### [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp)
@@ -10,6 +22,32 @@ The declaration is not an HTML tag. It is an "information" to the browser about 
 In HTML 5, the declaration is simple: `<!DOCTYPE html>`
 
 In older documents (HTML 4 or XHTML), the declaration is more complicated because the declaration must refer to a DTD (Document Type Definition).
+
+### [`<html>`](https://www.w3schools.com/tags/tag_html.asp)
+The `<html>` tag represents the root of an HTML document.
+
+The `<html>` tag is the container for all other HTML elements (except for the <!DOCTYPE> tag).
+
+Note: You should always include the lang attribute inside the `<html>` tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+
+### [`<head>`](https://www.w3schools.com/tags/tag_head.asp)
+The `<head>` element is a container for metadata (data about data) and is placed between the `<html>` tag and the `<body>` tag.
+
+Metadata is data about the HTML document. Metadata is not displayed.
+
+Metadata typically define the document title, character set, styles, scripts, and other meta information.
+
+The following elements can go inside the `<head>` element:
+
+``` html
+<title> (required in every HTML document)
+<style>
+<base>
+<link>
+<meta>
+<script>
+<noscript>
+```
 
 ### [`<title>`](https://www.w3schools.com/tags/tag_title.asp)
 The `<title>` tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.
@@ -69,6 +107,24 @@ Setting the viewport to make your website look good on all devices:
   <meta name="author" content="John Doe">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+```
+
+### [`<body>`](https://www.w3schools.com/tags/tag_body.asp)
+The `<body>` tag defines the document's body.
+
+The `<body>` element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+
+Note: There can only be one `<body>` element in an HTML document.
+
+### [`<!--...-->`](https://www.w3schools.com/tags/tag_comment.asp)
+The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.
+
+You can use comments to explain your code, which can help you when you edit the source code at a later date. This is especially useful if you have a lot of code.
+
+``` html
+<!--This is a comment. Comments are not displayed in the browser-->
+
+<p>This is a paragraph.</p>
 ```
 
 ### [`<strong>`](https://www.w3schools.com/tags/tag_strong.asp)
