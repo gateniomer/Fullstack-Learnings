@@ -32,21 +32,34 @@ So, try to make the title as accurate and meaningful as possible!
 
 Note: You can NOT have more than one `<title>` element in an HTML document.
 
-## meta: charset
-...
+### [`<meta>`](https://www.w3schools.com/tags/tag_meta.asp)
+The `<meta>` tag defines metadata about an HTML document. Metadata is data (information) about data.
 
-## meta: desctiption
-Show the description of the page in the search results.
+`<meta>` tags always go inside the `<head>` element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.
 
-## meta: viewport
-Enable us to make our page responsive.
+Metadata will not be displayed on the page, but is machine parsable.
 
+Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
 
-## meta: keywords
-Add keywords to our page, help with search results.
+Define keywords for search engines:
 
-## meta: robots
-By writing "NOINDEX,NOFOLLOW" in the content, we are telling the search engine to not show our page in the search results.
+`<meta name="keywords" content="HTML, CSS, JavaScript">`
+
+Define a description of your web page:
+
+`<meta name="description" content="Free Web tutorials for HTML and CSS">`
+
+Define the author of a page:
+
+`<meta name="author" content="John Doe">`
+
+Refresh document every 30 seconds:
+
+`<meta http-equiv="refresh" content="30">`
+
+Setting the viewport to make your website look good on all devices:
+
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
 - strong - bold text
 - em - italic text
@@ -133,6 +146,21 @@ If you use the less than (<) or greater than (>) signs in your text, the browser
 Character entities are used to display reserved characters in HTML.
 
 To display a less than sign (<) we must write: `&lt;` or `&#60;`
+
+## [HTML Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
+Semantic elements = elements with a meaning.
+
+A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: `<div>` and `<span>` - Tells nothing about its content.
+
+Examples of semantic elements: `<form>`, `<table>`, and `<article>` - Clearly defines its content.
+
+Many web sites contain HTML code like: `<div id="nav">` `<div class="header">` `<div id="footer">` to indicate navigation, header, and footer.
+
+In HTML there are some semantic elements that can be used to define different parts of a web page.
+
+![HTML Semantic Elements](https://www.w3schools.com/html/img_sem_elements.gif)
 
 ## Notes
 - Usually use 1 h1 per page
