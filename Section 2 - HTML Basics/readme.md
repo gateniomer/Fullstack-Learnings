@@ -116,6 +116,20 @@ The `<body>` element contains all the contents of an HTML document, such as head
 
 Note: There can only be one `<body>` element in an HTML document.
 
+### [`<h1> to <h6>`](https://www.w3schools.com/tags/tag_hn.asp)
+The `<h1>` to `<h6>` tags are used to define HTML headings.
+
+`<h1>` defines the most important heading. `<h6>` defines the least important heading.
+
+Note: Only use one `<h1>` per page - this should represent the main heading/subject for the whole page. Also, do not skip heading levels - start with `<h1>`, then use `<h2>`, and so on.
+
+### [`<p>`](https://www.w3schools.com/tags/tag_p.asp)
+The `<p>` tag defines a paragraph.
+
+Browsers automatically add a single blank line before and after each `<p>` element.
+
+Tip: Use CSS to style paragraphs.
+
 ### [`<!--...-->`](https://www.w3schools.com/tags/tag_comment.asp)
 The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.
 
@@ -243,6 +257,30 @@ The `<span>` tag is easily styled by CSS or manipulated with JavaScript using th
 
 **The `<span>` tag is much like the `<div>` element, but `<div>` is a block-level element and `<span>` is an inline element.**
 
+### `<form>`
+The `<form>` tag is used to create an HTML form for user input.
+
+The `<form>` element can contain one or more of the following form elements:
+
+``` html
+<input>
+<textarea>
+<button>
+<select>
+<option>
+<optgroup>
+<fieldset>
+<label>
+<output>
+
+<form action="/action_page.php" method="get">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
 
 ## [HTML Block and Inline Elements](https://www.w3schools.com/html/html_blocks.asp)
 Every HTML element has a default display value, depending on what type of element it is.
@@ -310,7 +348,6 @@ In HTML there are some semantic elements that can be used to define different pa
 ![HTML Semantic Elements](https://www.w3schools.com/html/img_sem_elements.gif)
 
 ## Notes
-- Usually use 1 h1 per page
 - index.html will be the home page.
 
 ## VSCODE EMMET TRICKS
