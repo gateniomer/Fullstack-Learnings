@@ -1,5 +1,5 @@
 # HTML-CSS-LEARNING
-In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer. 
+In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
 ## 6.2.22 - Started learning HTML
 Today, I learned all the basic concepts in HTML5 👏
