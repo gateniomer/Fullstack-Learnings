@@ -83,6 +83,52 @@ The `<hr>` tag defines a thematic break in an HTML page (e.g. a shift of topic).
 
 The `<hr>` element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page.
 
+### [`<del>`](https://www.w3schools.com/tags/tag_del.asp)
+The `<del>` tag defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.
+
+### [`<a>`](https://www.w3schools.com/tags/tag_a.asp)
+The `<a>` tag defines a hyperlink, which is used to link from one page to another.
+
+The most important attribute of the `<a>` element is the href attribute, which indicates the link's destination.
+
+By default, links will appear as follows in all browsers:
+
+- An unvisited link is underlined and blue
+- A visited link is underlined and purple
+- An active link is underlined and red
+
+### [`<img>`](https://www.w3schools.com/tags/tag_img.asp)
+The `<img>` tag is used to embed an image in an HTML page.
+
+Images are not technically inserted into a web page; images are linked to web pages. The `<img>` tag creates a holding space for the referenced image.
+
+The `<img>` tag has two required attributes:
+
+- src - Specifies the path to the image
+- alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed
+
+Note: Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads.
+
+Tip: To link an image to another document, simply nest the `<img>` tag inside an `<a>` tag.
+
+### [`<ul>`](https://www.w3schools.com/tags/tag_ul.asp)
+The `<ul>` tag defines an unordered (bulleted) list.
+
+Use the `<ul>` tag together with the `<li>` tag to create unordered lists.
+
+Tip: Use CSS to style lists.
+
+Tip: For ordered lists, use the `<ol>` tag.
+
+### [`<table>`](https://www.w3schools.com/tags/tag_table.asp)
+The `<table>` tag defines an HTML table.
+
+An HTML table consists of one `<table>` element and one or more `<tr>`, `<th>`, and `<td>` elements.
+
+The `<tr>` element defines a table row, the `<th>` element defines a table header, and the `<td>` element defines a table cell.
+
+An HTML table may also include `<caption>`, `<colgroup>`, `<thead>`, `<tfoot>`, and `<tbody>` elements.
+
 ### [`<div>`](https://www.w3schools.com/tags/tag_div.asp)
 The `<div>` tag defines a division or a section in an HTML document.
 
