@@ -282,6 +282,41 @@ The `<form>` element can contain one or more of the following form elements:
 </form>
 ```
 
+### [`<input>`](https://www.w3schools.com/tags/tag_input.asp)
+The `<input>` tag specifies an input field where the user can enter data.
+
+The `<input>` element is the most important form element.
+
+The `<input>` element can be displayed in several ways, depending on the type attribute.
+
+The different input types are as follows:
+
+``` html
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text"> (default value)
+<input type="time">
+<input type="url">
+<input type="week">
+```
+Look at the type attribute to see examples for each input type!
+
 ## [HTML Block and Inline Elements](https://www.w3schools.com/html/html_blocks.asp)
 Every HTML element has a default display value, depending on what type of element it is.
 
