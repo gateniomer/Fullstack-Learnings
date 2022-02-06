@@ -11,4 +11,4 @@ Some of them are:
 - entities
 - block,inline
 
-and much more! Now Looking forward to learn the basics of CSS.
+and much more! Now Looking forward to learn the basics of CSS. 
