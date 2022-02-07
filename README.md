@@ -1,7 +1,7 @@
 # HTML-CSS-LEARNING
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
-## 7.2.22 - learned the CSS basics
+## 📅 7.2.22 - learned the CSS basics
 Today, I learned some of the basic concepts of CSS:
 - inine,internal,external CSS
 - selectors
@@ -11,7 +11,7 @@ Today, I learned some of the basic concepts of CSS:
 
 Looking forward to learn more of this basic concepts.
 
-## 6.2.22 - learned the HTML basics
+## 📅 6.2.22 - learned the HTML basics
 Today, I learned all the basic concepts in HTML5 👏
 Some of them are:
 - basic layout
