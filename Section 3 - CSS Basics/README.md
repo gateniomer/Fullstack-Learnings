@@ -109,5 +109,93 @@ We can divide CSS selectors into five categories:
 - Pseudo-elements selectors (select and style a part of an element)
 - Attribute selectors (select elements based on an attribute or attribute value)
 
+``` css
+/* Here, all <p> elements on the page will be center-aligned, with a red text color: */
+p {
+  text-align: center;
+  color: red;
+}
+
+/* The CSS rule below will be applied to the HTML element with id="para1": */
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+/* In this example all HTML elements with class="center" will be red and center-aligned: */
+.center {
+  text-align: center;
+  color: red;
+}
+
+/* In this example only <p> elements with class="center" will be red and center-aligned: */
+p.center {
+  text-align: center;
+  color: red;
+}
+
+/* The CSS rule below will affect every HTML element on the page: */
+* {
+  text-align: center;
+  color: blue;
+}
+
+/* The grouping selector selects all the HTML elements with the same style definitions.
+
+Look at the following CSS code (the h1, h2, and p elements have the same style definitions): */
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+
+    /* In this example we have grouped the selectors from the code above: */
+    h1, h2, p {
+      text-align: center;
+      color: red;
+    }
+```
+
+## [CSS Comments](https://www.w3schools.com/css/css_comments.asp)
+Comments are used to explain the code, and may help when you edit the source code at a later date.
+
+Comments are ignored by browsers.
+
+A CSS comment is placed inside the `<style>` element, and starts with /* and ends with */:
+
+``` css
+/* This is a single-line comment */
+p {
+  color: red;
+}
+```
+
+## [CSS Fonts](https://www.w3schools.com/css/css_font.asp)
+Choosing the right font has a huge impact on how the readers experience a website.
+
+The right font can create a strong identity for your brand.
+
+Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.
+
+In CSS there are five generic font families:
+
+1. **Serif** fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+2. **Sans-serif** fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+3.  **Monospace** fonts - here all the letters have the same fixed width. They create a mechanical look. 
+4. **Cursive** fonts imitate human handwriting.
+5. **Fantasy** fonts are decorative/playful fonts.
+
+![fonts](https://www.w3schools.com/css/serif.gif)
+
 ## Notes
-- If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
+- If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
+- "user agent stylesheet" is the browser styling we see in chrome
