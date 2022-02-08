@@ -318,6 +318,47 @@ body {
   background-attachment: fixed;
 }
 ```
+## [CSS Borders](https://www.w3schools.com/css/css_border.asp)
+The CSS border properties allow you to specify the style, width, and color of an element's border.
+
+The `border-style` property specifies what kind of border to display.
+
+The following values are allowed:
+
+- dotted - Defines a dotted border
+- dashed - Defines a dashed border
+- solid - Defines a solid border
+- double - Defines a double border
+- groove - Defines a 3D grooved border. The effect depends on the border-color value
+- ridge - Defines a 3D ridged border. The effect depends on the border-color value
+- inset - Defines a 3D inset border. The effect depends on the border-color value
+- outset - Defines a 3D outset border. The effect depends on the border-color value
+- none - Defines no border
+- hidden - Defines a hidden border
+
+``` css
+border-style: solid;
+border-width: 5px;
+border-color: red;
+border-radius: 5px;
+
+/* In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left): */
+border-top-style: dotted;
+border-right-style: solid;
+border-bottom-style: dotted;
+border-left-style: solid;
+
+/* The example above gives the same result as this: */
+border-style: dotted solid;
+
+/* To shorten the code, it is also possible to specify all the individual border properties in one property. */
+border: 5px solid red;
+```
+
+## [CSS Height and Width](https://www.w3schools.com/css/css_dimension.asp)
+The CSS `height` and `width` properties are used to set the height and width of an element.
+
+The CSS `max-width` property is used to set the maximum width of an element.
 
 ## Notes
 - If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
