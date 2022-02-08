@@ -667,7 +667,7 @@ a:active {
 }
 ```
 
-## [CSS Cursor Property](https://www.w3schools.com/cssref/pr_class_cursor.asp)
+## [CSS cursor Property](https://www.w3schools.com/cssref/pr_class_cursor.asp)
 
 The `cursor` property specifies the mouse cursor to be displayed when pointing over an element.
 
@@ -710,7 +710,7 @@ The `cursor` property specifies the mouse cursor to be displayed when pointing o
 .zoom-out {cursor: zoom-out;}
 ```
 
-## [HTML Lists and CSS List Properties](https://www.w3schools.com/css/css_list.asp)
+## [HTML Lists and CSS list Properties](https://www.w3schools.com/css/css_list.asp)
 In HTML, there are two main types of lists:
 
 - unordered lists `(<ul>)` - the list items are marked with bullets
@@ -742,7 +742,7 @@ ol.d {
 }
 ```
 
-## [The Display Property](https://www.w3schools.com/css/css_display_visibility.asp)
+## [The display Property](https://www.w3schools.com/css/css_display_visibility.asp)
 
 The `display` property is the most important CSS property for controlling layout.
 
