@@ -360,6 +360,85 @@ The CSS `height` and `width` properties are used to set the height and width of 
 
 The CSS `max-width` property is used to set the maximum width of an element.
 
+The height and width properties may have the following values:
+
+- auto - This is default. The browser calculates the height and width
+- length - Defines the height/width in px, cm etc.
+- % - Defines the height/width in percent of the containing block
+- initial - Sets the height/width to its default value
+- inherit - The height/width will be inherited from its parent value
+``` css
+div {
+  height: 100px;
+  width: 100px;
+  width: 50%;
+  max-width: 500px;
+  background-color: powderblue;
+}
+```
+
+## [CSS Margins](https://www.w3schools.com/css/css_margin.asp)
+The CSS `margin` properties are used to create space around elements, outside of any defined borders.
+
+**Tip**: Negative values are allowed.
+
+``` css
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+
+  margin: 25px 50px 75px 100px;
+}
+```
+
+## [CSS Padding](https://www.w3schools.com/css/css_padding.asp)
+Padding is used to create space around an element's content, inside of any defined borders.
+
+**Note**: Negative values are not allowed.
+
+``` css
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+
+  padding: 25px 50px 75px 100px;
+}
+```
+The CSS `width` property specifies the width of the element's content area. The content area is the portion inside the `padding`, `border`, and `margin` of an element (the box model).
+
+So, if an element has a specified `width`, **the `padding` added to that element will be added to the total width of the element**. This is often an undesirable result.
+
+To keep the original `width`, no matter the amount of `padding`, you can use the `box-sizing` property. This causes the element to maintain its actual `width`. if you increase the padding, the available content space will decrease.
+
+``` css
+div {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+```
+
+## [The CSS Box Model](https://www.w3schools.com/css/css_boxmodel.asp)
+In CSS, the term "box model" is used when talking about design and layout.
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+
+![box-model](https://www.washington.edu/accesscomputing/webd2/student/unit3/images/boxmodel.gif)
+
+**Important**: When you set the `width` and `height` properties of an element with CSS, you just set the `width` and `height` of the content area. To calculate the full size of an element, you must also add `padding`, `borders` and `margins`.
+
+### **The total width of an element should be calculated like this:**
+
+Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+
+### **The total height of an element should be calculated like this:**
+
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+
 ## Notes
 - If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
 - "user agent stylesheet" is the browser styling we see in chrome
@@ -370,4 +449,7 @@ The CSS `max-width` property is used to set the maximum width of an element.
 - Recommended color websites:
   - https://htmlcolorcodes.com/
   - https://www.color-hex.com/
-- 
+
+## VSCODE EMMET TRICKS
+- `#box-1.box` return div with id 'box-1' and class 'box'.
+- `margin: auto` + `width: x` = centered div (add max-width for responsive design)
