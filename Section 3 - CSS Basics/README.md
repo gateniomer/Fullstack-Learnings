@@ -441,6 +441,8 @@ Total element height = height + top padding + bottom padding + top border + bott
 
 ## [CSS Text](https://www.w3schools.com/css/css_text.asp)
 
+CSS has a lot of properties for formatting text.
+
 ``` css
 h1 {
   /* The color property is used to set the color of the text. */
@@ -448,9 +450,39 @@ h1 {
 
   /* The text-align property is used to set the horizontal alignment of a text. */
   text-align: right;
+
+  /* When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers): */
+  text-align: justify;
+
+  /* The text-align-last property specifies how to align the last line of a text. */
+  text-align-last: center;
+
+  /* The direction and unicode-bidi properties can be used to change the text direction of an element: */
+  direction: rtl;
+  unicode-bidi: bidi-override;
+
+  /* The vertical-align property sets the vertical alignment of an element. */
+  vertical-align: baseline;
+  vertical-align: text-top;
+  vertical-align: text-bottom;
+  vertical-align: sub;
+  vertical-align: super;
+
+  /* The text-decoration-line property is used to add a decoration line to text. */
+  text-decoration-line: overline;
+  text-decoration-line: line-through;
+  text-decoration-line: underline;
+
+  /* Tip: Links in HTML are underlined by default. Sometimes you see that links are styled with no underline. The text-decoration: none; is used to remove underlines from links, like this: */
+  text-decoration: none;
+
+  /* The text-transform property is used to specify uppercase and lowercase letters in a text. */
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
 }
 ```
-
+There is also text spacing and shadow properties available.
 
 ## [Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
 The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on.
@@ -505,8 +537,41 @@ table {
 	border-spacing: 0;
 }
 ```
+## [CSS Icons](https://www.w3schools.com/css/css_icons.asp)
 
+Icons can easily be added to your HTML page, by using an icon library.
 
+The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.
+
+Add the name of the specified icon class to any inline HTML element (like `<i>` or `<span>`).
+
+All the icons in the icon libraries below, are scalable vectors that can be customized with CSS (size, color, shadow, etc.)
+
+To use the Font Awesome icons, go to fontawesome.com, sign in, and get a code to add in the `<head>` section of your HTML page:
+
+``` html
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+```
+
+Example:
+
+``` html
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i>
+<i class="fas fa-file"></i>
+<i class="fas fa-bars"></i>
+
+</body>
+</html>
+```
 
 ## Notes
 - If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
@@ -518,6 +583,7 @@ table {
 - Recommended color websites:
   - https://htmlcolorcodes.com/
   - https://www.color-hex.com/
+- Class selector is stronger then element selector.
 
 ## VSCODE EMMET TRICKS
 - `#box-1.box` return div with id 'box-1' and class 'box'.
