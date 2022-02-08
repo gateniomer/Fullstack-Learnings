@@ -196,6 +196,55 @@ In CSS there are five generic font families:
 
 ![fonts](https://www.w3schools.com/css/serif.gif)
 
+### **The CSS font-family Property**
+In CSS, we use the font-family property to specify the font of a text.
+
+**Note**: If the font name is more than one word, it must be in quotation marks, like: "Times New Roman".
+
+**Tip**: The font-family property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. Start with the font you want, and end with a generic family (to let the browser pick a similar font in the generic family, if no other fonts are available). The font names should be separated with comma.
+
+``` css
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+```
+
+### **CSS Web Safe Fonts**
+Web safe fonts are fonts that are universally installed across all browsers and devices.
+
+However, there are no 100% completely web safe fonts. There is always a chance that a font is not found or is not installed properly.
+
+Therefore, it is very important to always use [**Fallback Fonts**](https://www.w3schools.com/css/css_font_fallbacks.asp).
+
+This means that you should add a list of similar "backup fonts" in the font-family property. If the first font does not work, the browser will try the next one, and the next one, and so on. Always end the list with a generic font family name.
+
+``` css
+p {
+font-family: Tahoma, Verdana, sans-serif;
+}
+```
+
+The following list are the best web safe fonts for HTML and CSS:
+
+- Arial (sans-serif)
+- Verdana (sans-serif)
+- Helvetica (sans-serif)
+- Tahoma (sans-serif)
+- Trebuchet MS (sans-serif)
+- Times New Roman (serif)
+- Georgia (serif)
+- Garamond (serif)
+- Courier New (monospace)
+- Brush Script MT (cursive)
+
 ## Notes
 - If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
 - "user agent stylesheet" is the browser styling we see in chrome
