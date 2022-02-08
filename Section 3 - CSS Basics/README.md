@@ -573,6 +573,141 @@ Example:
 </html>
 ```
 
+## [Float and Clear](https://www.w3schools.com/css/css_float.asp)
+
+The CSS `float` property specifies how an element should float.
+
+The CSS `clear` property specifies what elements can float beside the cleared element and on which side.
+
+The `float` property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+
+The `float` property can have one of the following values:
+
+- left - The element floats to the left of its container
+- right - The element floats to the right of its container
+- none - The element does not float (will be displayed just where it occurs in the text). This is default
+- inherit - The element inherits the float value of its parent
+
+**When we use the `float` property, and we want the next element below (not on right or left), we will have to use the `clear` property.**
+
+The `clear` property specifies what should happen with the element that is next to a floating element.
+
+The `clear` property can have one of the following values:
+
+- none - The element is not pushed below left or right floated elements. This is default
+- left - The element is pushed below left floated elements
+- right - The element is pushed below right floated elements
+- both - The element is pushed below both left and right floated elements
+- inherit - The element inherits the clear value from its parent
+
+**When clearing floats, you should match the clear to the float**: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+
+``` css
+div1 {
+  float: left;
+}
+
+div2 {
+  clear: left;
+}
+```
+
+### **The clearfix Hack**
+If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem:
+
+``` css
+.clearfix {
+  overflow: auto;
+}
+```
+
+Without clearfix:
+
+![without clearfix](https://www.w3schools.com/howto/clearfix_prob.jpg)
+
+With clearfix:
+
+![without clearfix](https://www.w3schools.com/howto/clearfix_solution.jpg)
+
+## [CSS Pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+- Style an element when a user mouses over it
+- Style visited and unvisited links differently
+- Style an element when it gets focus
+
+``` css
+/* The syntax of pseudo-classes */
+selector:pseudo-class {
+  property: value;
+}
+
+/* unvisited link */
+a:link {
+  color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+```
+
+## [CSS Cursor Property](https://www.w3schools.com/cssref/pr_class_cursor.asp)
+
+The `cursor` property specifies the mouse cursor to be displayed when pointing over an element.
+
+``` css
+.alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.context-menu {cursor: context-menu;}
+.col-resize {cursor: col-resize;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: grab;}
+.grabbing {cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.url {cursor: url(myBall.cur),auto;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}
+```
+
 ## Notes
 - If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
 - "user agent stylesheet" is the browser styling we see in chrome
