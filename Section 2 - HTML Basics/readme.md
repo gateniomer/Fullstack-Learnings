@@ -1,4 +1,4 @@
-# Section 1 - HTML Basics
+# Section 2 - HTML Basics
 ``` html
 <!DOCTYPE html>
 <html lang="en">
