@@ -245,6 +245,20 @@ The following list are the best web safe fonts for HTML and CSS:
 - Courier New (monospace)
 - Brush Script MT (cursive)
 
+### **How To Use Google Fonts**
+Just add a special style sheet link in the `<head>` section and then refer to the font in the CSS.
+
+``` css
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+}
+</style>
+</head>
+```
+
 ### **More Fonts Properties**
 ```css
 p.style {
@@ -269,7 +283,50 @@ p.size {
   font-size: 100%;
 }
 ```
+## [CSS Colors](https://www.w3schools.com/css/css_colors.asp)
+Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+
+``` html
+<h1 style="background-color:tomato;">...</h1>
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+```
+
+## [CSS Backgrounds](https://www.w3schools.com/css/css_background.asp)
+The CSS background properties are used to add background effects for elements.
+
+``` css
+body {
+
+  /* The background-color property specifies the background color of an element. */
+  background-color: lightblue;
+
+  /* The background-image property specifies an image to use as the background of an element. By default, the image is repeated so it covers the entire element. (horizontally and vertically)*/
+  background-image: url("paper.gif");
+
+  /* Showing the background image only once is also specified by the background-repeat property: */
+  background-repeat: no-repeat;
+
+  /* The background-position property is used to specify the position of the background image. */
+  background-position: right top;
+
+  /* The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page): */
+  background-attachment: fixed;
+}
+```
 
 ## Notes
 - If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
 - "user agent stylesheet" is the browser styling we see in chrome
+- If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).
+- Recommended background colors:
+  - #333 - dark background
+  - #f4f4f4 light background
+- Recommended color websites:
+  - https://htmlcolorcodes.com/
+  - https://www.color-hex.com/
+- 
