@@ -439,6 +439,75 @@ Total element width = width + left padding + right padding + left border + right
 
 Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
 
+## [CSS Text](https://www.w3schools.com/css/css_text.asp)
+
+``` css
+h1 {
+  /* The color property is used to set the color of the text. */
+  color: green;
+
+  /* The text-align property is used to set the horizontal alignment of a text. */
+  text-align: right;
+}
+```
+
+
+## [Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
+The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on.
+
+``` css
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+```
+
+
+
 ## Notes
 - If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
 - "user agent stylesheet" is the browser styling we see in chrome
@@ -452,4 +521,4 @@ Total element height = height + top padding + bottom padding + top border + bott
 
 ## VSCODE EMMET TRICKS
 - `#box-1.box` return div with id 'box-1' and class 'box'.
-- `margin: auto` + `width: x` = centered div (add max-width for responsive design)
+- `margin: auto` + `width: x` = centered div (add `max-width` for responsive design)
