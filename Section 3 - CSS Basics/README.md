@@ -245,6 +245,31 @@ The following list are the best web safe fonts for HTML and CSS:
 - Courier New (monospace)
 - Brush Script MT (cursive)
 
+### **More Fonts Properties**
+```css
+p.style {
+  font-style: normal;
+  font-style: italic;
+  font-style: oblique;
+}
+
+p.weight {
+  font-weight: normal;
+  font-weight: bold;
+}
+
+p.variant {
+  font-variant: normal;
+  font-variant: small-caps;
+}
+
+p.size {
+  font-size: 40px;
+  font-size: 2.5em;
+  font-size: 100%;
+}
+```
+
 ## Notes
 - If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
 - "user agent stylesheet" is the browser styling we see in chrome
