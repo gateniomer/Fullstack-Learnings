@@ -1,7 +1,7 @@
 # HTML-CSS-LEARNING
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
-## 📅 11.2.22 - Created my fist website!
+## 📅 11.2.22 - Created my first website!
 Today, I created a beautiful hotel website using the basics of HTML and CSS I learned so far. 
 
 ## 📅 8.2.22 - learned more CSS basics
