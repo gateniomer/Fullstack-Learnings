@@ -54,3 +54,44 @@ Relative length units specify a length relative to another length property. Rela
 
 ## [Responsive Web Design](https://www.w3schools.com/css/css_rwd_intro.asp)
 
+Responsive web design makes your web page look good on all devices.
+
+Responsive web design uses only HTML and CSS.
+
+Responsive web design is not a program or a JavaScript.
+
+### **What is The Viewport?**
+
+The viewport is the user's visible area of a web page.
+
+The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
+
+Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size.
+
+Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen.
+
+This was not perfect!! But a quick fix.
+
+HTML5 introduced a method to let web designers take control over the viewport, through the `<meta>` tag.
+
+You should include the following `<meta>` viewport element in all your web pages:
+
+``` html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+This gives the browser instructions on how to control the page's dimensions and scaling.
+
+The `width=device-width` part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The `initial-scale=1.0` part sets the initial zoom level when the page is first loaded by the browser.
+
+Without the viewport meta tag:
+
+![withoutmeta](https://www.w3schools.com/css/img_viewport1.png)
+
+With the viewport meta tag:
+
+![withmeta](https://www.w3schools.com/css/img_viewport2.png)
+
+### **What is a Media Query?**
