@@ -4,6 +4,14 @@ In 6.2.22, I started my first steps in my journey to become a Full-Stuck develop
 ## 📅 11.2.22 - Created my first website!
 Today, I created a beautiful hotel website using the basics of HTML and CSS I learned so far. 
 
+I also learned about Responsive layouts:
+- absolute/relative length units
+- the viewport & media query
+- typical breakpoints
+- mobile first design
+
+Looking forward to learn about Flexbox.
+
 ## 📅 8.2.22 - learned more CSS basics
 Today, I learned more basic concepts in CSS:
 - background & border
