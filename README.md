@@ -10,14 +10,6 @@ Today, I learned about Flexbox and its properties:
 
 Looking forward to finish working on another website using flexbox.
 
-I also learned about Responsive layouts:
-- absolute/relative length units
-- the viewport & media query
-- typical breakpoints
-- mobile first design
-
-Looking forward to learn about Flexbox.
-
 ## 📅 11.2.22 - Created my first website!
 Today, I created a beautiful hotel website using the basics of HTML and CSS I learned so far. 
 
