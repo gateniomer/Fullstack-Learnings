@@ -867,22 +867,6 @@ p {
 }
 ```
 
-## Notes
-- If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
-- "user agent stylesheet" is the browser styling we see in chrome
-- If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).
-- Recommended background colors:
-  - #333 - dark background
-  - #f4f4f4 light background
-- Recommended color websites:
-  - https://htmlcolorcodes.com/
-  - https://www.color-hex.com/
-- Class selector is stronger then element selector.
-
-## VSCODE EMMET TRICKS
-- `#box-1.box` return div with id 'box-1' and class 'box'.
-- `margin: auto` + `width: x` = centered div (add `max-width` for responsive design)
-
 # Section 5 - Responsive Layouts
 
 ## [CSS Units](https://www.w3schools.com/css/css_units.asp)
@@ -1053,3 +1037,21 @@ You can have a set of CSS properties that will only apply when the browser windo
   }
 }
 ```
+
+
+# Notes
+- If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
+- "user agent stylesheet" is the browser styling we see in chrome
+- If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).
+- Recommended background colors:
+  - #333 - dark background
+  - #f4f4f4 light background
+- Recommended color websites:
+  - https://htmlcolorcodes.com/
+  - https://www.color-hex.com/
+- Class selector is stronger then element selector.
+- in `<a>` tag, `targer="_blank"` will open the link in a new tab.
+
+## VSCODE EMMET TRICKS
+- `#box-1.box` return div with id 'box-1' and class 'box'.
+- `margin: auto` + `width: x` = centered div (add `max-width` for responsive design)
