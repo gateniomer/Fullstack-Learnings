@@ -84,7 +84,7 @@
 }
 
 .menu-wrap .toggler:checked ~ .menu > div{
-  transform: scale(1);
+  transform: translateY(0);
   transition-duration: var(--menu-speed);
 }
 
@@ -101,20 +101,17 @@
   height: 100%;
   visibility: hidden;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .menu-wrap .menu > div {
   background: var(--overlay-color);
   width: 100vw;
-  height: 100vh;
+  height: 30vh;
   display: flex;
   flex:none;
   align-items: center;
   justify-content: center;
-  transform:scale(0);
+  transform:translateY(-30vh);
   transition: all 0.4s ease; 
 }
 
