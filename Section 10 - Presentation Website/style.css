@@ -81,6 +81,7 @@ body{
   animation: para var(--amimate-speed) forwards ease-in;
 }
 
+
 @keyframes heading{
   from{
     transform: translateY(-50vh);
@@ -98,3 +99,4 @@ body{
     transform: translateX(0);
   }
 }
+
