@@ -1,6 +1,15 @@
 # HTML-CSS-LEARNING
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 15.2.22 - More advanced CSS
+Today, I learned more advanced css properties:
+-  targeted selectors
+-  before/after
+-  box shadow/text shadow
+-  transitions & transform
+
+Looking forward to learn more advanced CSS topics.
+
 ## 📅 12.2.22 - Flexbox!
 Today, I learned about Flexbox and its properties:
 -  flex main axis & cross axis
