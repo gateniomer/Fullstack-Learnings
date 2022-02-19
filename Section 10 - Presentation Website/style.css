@@ -71,3 +71,30 @@ body{
   background: #f4f4f4;
   color: #333;
 }
+
+/* Animations */
+#page-1 h1{
+  animation: heading var(--amimate-speed) forwards ease-in;
+}
+
+#page-1 p{
+  animation: para var(--amimate-speed) forwards ease-in;
+}
+
+@keyframes heading{
+  from{
+    transform: translateY(-50vh);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+
+@keyframes para{
+  from{
+    transform: translateX(-100vw);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
