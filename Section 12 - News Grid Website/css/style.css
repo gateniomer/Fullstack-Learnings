@@ -224,7 +224,7 @@ h1,h2,h3,h4,h5,h6 {
   opacity: 0.4;
 }
 
-#showcase .container {
+#showcase .showcase-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -232,10 +232,10 @@ h1,h2,h3,h4,h5,h6 {
   height: 50vh;
 }
 
-#showcase .showcase-container {
+#showcase .showcase-content {
   z-index:1;
 }
-#showcase .showcase-container p {
+#showcase .showcase-content p {
   margin-bottom: 1rem;
 }
 
