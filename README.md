@@ -1,6 +1,14 @@
 # HTML-CSS-LEARNING
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 20.2.22 - More advanced CSS
+Today, I learned CSS Grid and made mini project comining it with what I learned so far:
+-  grid rows / columns
+-  fr unit
+-  template areas
+
+Looking forward to learn Sass.
+
 ## 📅 19.2.22 - More advanced CSS
 Today, I worked on mini projects combining the skills I learnd so far:
 -  Hamburger Menu Project
