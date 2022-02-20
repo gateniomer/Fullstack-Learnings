@@ -1,7 +1,7 @@
 # HTML-CSS-LEARNING
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
-## 📅 16.2.22 - More advanced CSS
+## 📅 19.2.22 - More advanced CSS
 Today, I worked on mini projects combining the skills I learnd so far:
 -  Hamburger Menu Project
 -  Presentation Project
