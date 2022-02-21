@@ -1,6 +1,14 @@
 # HTML-CSS-LEARNING
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 21.2.22 - Learned Sass!
+Today, I learned Sass and made a mini project comining what I learned so far:
+-  sass variables
+-  nesting
+-  @import, @missing, @extend
+
+Looking forward to do some big projects with the knowledge I gained 😊
+
 ## 📅 20.2.22 - More advanced CSS
 Today, I learned CSS Grid and made mini project comining it with what I learned so far:
 -  grid rows / columns
