@@ -12,6 +12,32 @@
 </body>
 </html>
 ```
+
+## [HTML Elements](https://www.w3schools.com/html/html_elements.asp)
+An HTML element is defined by a start tag, some content, and an end tag.
+
+The HTML element is everything from the start tag to the end tag:
+
+`<tagname>`Content goes here...`</tagname>`
+
+## [HTML Attributes](https://www.w3schools.com/html/html_attributes.asp)
+HTML attributes provide additional information about HTML elements.
+
+All HTML elements can have attributes.
+Attributes provide additional information about elements.
+Attributes are always specified in the start tag
+and usually come in name/value pairs like: name="value".
+
+- All HTML elements can have attributes
+- The href attribute of `<a>` specifies the URL of the page the link goes to
+- The src attribute of `<img>` specifies the path to the image to be displayed
+- The width and height attributes of `<img>` provide size information for images
+- The alt attribute of `<img>` provides an alternate text for an image
+- The style attribute is used to add styles to an element, such as color, font, size, and more
+- The lang attribute of the `<html>` tag declares the language of the Web page
+- The title attribute defines some extra information about an element
+
+
 ## [HTML Tags](https://www.w3schools.com/tags/default.asp)
 
 ### [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp)
@@ -317,6 +343,35 @@ The different input types are as follows:
 ```
 Look at the type attribute to see examples for each input type!
 
+## [HTML Text Formatting](https://www.w3schools.com/html/html_formatting.asp)
+HTML contains several elements for defining text with a special meaning.
+
+Formatting elements were designed to display special types of text:
+
+`<b>` - Bold text
+`<strong>` - Important text
+`<i>` - Italic text
+`<em>` - Emphasized text
+`<mark>` - Marked text
+`<small>` - Smaller text
+`<del>` - Deleted text
+`<ins>` - Inserted text
+`<sub>` - Subscript text
+`<sup>` - Superscript text
+
+## [HTML Quotation and Citation Elements](https://www.w3schools.com/html/html_quotation_elements.asp)
+`<abbr>`	Defines an abbreviation or acronym
+
+`<address>`	Defines contact information for the author/owner of a document
+
+`<bdo>`	Defines the text direction
+
+`<blockquote>`	Defines a section that is quoted from another source
+
+`<cite>`	Defines the title of a work
+
+`<q>`	Defines a short inline quotation
+
 ## [HTML Block and Inline Elements](https://www.w3schools.com/html/html_blocks.asp)
 Every HTML element has a default display value, depending on what type of element it is.
 
@@ -382,8 +437,32 @@ In HTML there are some semantic elements that can be used to define different pa
 
 ![HTML Semantic Elements](https://www.w3schools.com/html/img_sem_elements.gif)
 
-## Notes
-- index.html will be the home page.
+## [HTML Image Maps](https://www.w3schools.com/html/html_images_imagemap.asp)
+With HTML image maps, you can create clickable areas on an image.
+
+The HTML `<map>` tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more `<area>` tags.
+
+You must define the shape of the clickable area, and you can choose one of these values:
+
+- rect - defines a rectangular region
+
+- circle - defines a circular region
+
+- poly - defines a polygonal region
+
+- default - defines the entire region
+
+You must also define some coordinates to be able to place the clickable area onto the image. 
+
+``` html
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+```
 
 ## VSCODE EMMET TRICKS
 - ctrl + Enter: new line from everywhere
