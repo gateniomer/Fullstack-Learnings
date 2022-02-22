@@ -1119,6 +1119,15 @@ h2::before {
 }
 ```
 
+## [CSS Math Functions](https://www.w3schools.com/css/css_math_functions.asp)
+The CSS math functions allow mathematical expressions to be used as property values.
+
+`calc()`	Allows you to perform calculations to determine CSS property values
+
+`max()`	Uses the largest value, from a comma-separated list of values, as the property value
+
+`min()`	Uses the smallest value, from a comma-separated list of values, as the property value
+
 ## Notes
 - If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
 - "user agent stylesheet" is the browser styling we see in chrome
