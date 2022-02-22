@@ -1077,6 +1077,47 @@ div ~ p {
   background-color: yellow;
 }
 ```
+## [CSS Attribute Selectors](https://www.w3schools.com/css/css_attribute_selectors.asp)
+It is possible to style HTML elements that have specific attributes or attribute values.
+
+``` css
+a[target] {
+  /* The following example selects all <a> elements with a target attribute: */
+  background-color: yellow;
+}
+```
+### All CSS Attribute Selectors
+`[attribute]` - `[target]`	Selects all elements with a target attribute
+
+`[attribute=value]` - `[target=_blank]`	Selects all elements with target="_blank"
+
+`[attribute~=value]` -	`[title~=flower]`	Selects all elements with a title attribute containing the word "flower"
+
+`[attribute|=value]` - `[lang|=en]`	Selects all elements with a lang attribute value starting with "en"
+
+`[attribute^=value]` - `a[href^="https"]`	Selects every `<a>` element whose href attribute value begins with "https"
+
+`[attribute$=value]` - `a[href$=".pdf"]`	Selects every `<a>` element whose href attribute value ends with ".pdf"
+
+`[attribute*=value]` - `a[href*="w3schools"]`	Selects every `<a>` element whose href attribute value contains the substring "w3schools"
+
+## [CSS Counters](https://www.w3schools.com/css/css_counters.asp)
+CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules (to track how many times they are used). Counters let you adjust the appearance of content based on its placement in the document.
+
+``` css
+body {
+  /* To use a CSS counter, it must first be created with counter-reset: */
+  counter-reset: section;
+}
+
+h2::before {
+  /* Increments a counter value */
+  counter-increment: section;
+
+  /* Inserts generated content +  Adds the value of a counter to an element: */
+  content: "Section " counter(section) ": ";
+}
+```
 
 ## Notes
 - If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
