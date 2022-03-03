@@ -1,6 +1,19 @@
 # HTML-CSS-LEARNING
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 3.3.22 - Working on my project while learning Bootstrap!
+I decided to start learning Bootstrap while I'm Working on my HTML & CSS project.
+
+Today, I learned the typography & utilities classes in bootstrap:
+-  Headings & basic typography
+-  Text alignment & display
+-  Floats & positions
+-  Colors & background
+-  Spacing (margin & padding) & Sizing
+-  Breakpoints
+
+Looking forward to learn about more CSS components in bootstrap.
+
 ## 📅 21.2.22 - Learned Sass!
 Today, I learned Sass and made a mini project comining what I learned so far:
 -  sass variables
