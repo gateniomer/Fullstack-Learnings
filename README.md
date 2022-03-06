@@ -1,6 +1,18 @@
 # HTML-CSS-LEARNING
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 6.3.22 - CSS Components in Bootstrap
+Today, I learned some of the css components in bootstrap:
+-  Buttons
+-  Navbars
+-  List
+-  Form & inputs
+-  Cards & Media objects
+-  Tables 
+-  Many more!
+
+Looking forward to learn more about bootstrap.
+
 ## 📅 3.3.22 - Working on my project while learning Bootstrap!
 I decided to start learning Bootstrap while I'm Working on my HTML & CSS project.
 
