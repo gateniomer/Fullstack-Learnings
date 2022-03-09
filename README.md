@@ -1,4 +1,4 @@
-# HTML-CSS-LEARNING
+# Full-Stack Journey
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
 ## 📅 9.3.22 - More Bootstrap!
