@@ -1,6 +1,14 @@
 # HTML-CSS-LEARNING
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 9.3.22 - More Bootstrap!
+Today, I learned more components in bootstrap and made my first mini-project:
+-  Grid System
+-  Flexbox
+-  JS Widgets
+
+Looking forward to practice bootstrap by doing more mini-projects.
+
 ## 📅 6.3.22 - CSS Components in Bootstrap
 Today, I learned some of the css components in bootstrap:
 -  Buttons
