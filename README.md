@@ -1,6 +1,11 @@
 # Full-Stack Journey
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 13.3.22 - Finishing Bootstrap
+Today, I made another mini-project combining bootstrapp with sass.
+
+Looking forward to summarize what I learned so far and continue to learn JavaScript!
+
 ## 📅 9.3.22 - More Bootstrap!
 Today, I learned more components in bootstrap and made my first mini-project:
 -  Grid System
