@@ -1,6 +1,12 @@
 # Full-Stack Journey
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 20.3.22 - Started Learning JavaScript!
+Today, I learned the basics of JS.
+I also learned about the window object and its properties.
+
+Looking forward to learn about the DOM.
+
 ## 📅 13.3.22 - Finishing Bootstrap
 Today, I made another mini-project combining bootstrapp with sass.
 
