@@ -37,7 +37,7 @@ function addTask(e){
   li.appendChild(document.createTextNode(`#${taskList.childElementCount+1} ${taskInput.value}`));
   const time = document.createElement('span');
   time.innerText=` ${new Date().getHours()}:${new Date().getMinutes()}`;
-  time.className='li-time';
+  time.className='grayed';
   li.appendChild(time);
 
   const deleteLink = document.createElement('a');

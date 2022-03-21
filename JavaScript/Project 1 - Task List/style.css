@@ -75,13 +75,12 @@ body{
   background: red;
   color: #fff;
   cursor: pointer;
+  margin-left: auto;
 }
 
-.collections li span.li-time{
-  background:red;
-  color: #fff;
-  padding: .5rem .5rem;
-  border-radius: 10px;
+.collections li span{
+  margin-left: 10px;
+  opacity: 0.6;
 }
 
 .no-task-message{
