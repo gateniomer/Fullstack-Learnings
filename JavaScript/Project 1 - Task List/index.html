@@ -11,21 +11,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-  <title>Task List</title>
+  <title>Simple Task List</title>
 </head>
 <body>
   <div class="container">
     <div class="card">
-      <h1>Task List</h1>
+      <h1>Simple Task List</h1>
       <p class="grayed">Welcome Back User</p>
       <form id="task-form">
-        <input type="text" placeholder="New Task" class="input-form">
+        <input type="text" placeholder="New Task" class="input-form" id="task-input">
         <input type="submit" value="Add" class="btn">
       </form>
-      <ul class="collections">
-        <li>Task #1</li>
-        <li>Task #2</li>
-        <li>Task #3</li>
+      <p class="no-task-message"></p>
+      <ul class="collections" id="task-list">
       </ul>
     </div>
   </div>
