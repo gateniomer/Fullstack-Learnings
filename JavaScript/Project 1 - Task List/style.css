@@ -56,10 +56,43 @@ body{
 }
 
 .collections li{
+  display: flex;
+  align-items: center;
   background: #fff;
-  padding: .4rem .5rem;
+  padding: .4rem 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
+  opacity: 0;
+  height: 0;
+  animation: li-enter 1s forwards;
+}
+
+.collections li a.delete{
+  padding: .3rem .5rem;
+  border-radius: 5px;
+  background: red;
+  color: #fff;
+  cursor: pointer;
+}
+
+.collections li span.li-time{
+  background:red;
+  color: #fff;
+  padding: .5rem .5rem;
+  border-radius: 10px;
+}
+
+.no-task-message{
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+@keyframes li-enter{
+  to{
+    opacity: 1;
+    height: 40px;
+  }
 }
