@@ -18,13 +18,18 @@
     <div class="card">
       <h1>Simple Task List</h1>
       <p class="grayed">Welcome Back User</p>
-      <form id="task-form">
+      <form id="task-form" class="form">
         <input type="text" placeholder="New Task" class="input-form" id="task-input">
-        <input type="submit" value="Add" class="btn">
+        <input type="submit" value="Add" class="btn btn-input">
       </form>
       <p class="no-task-message"></p>
+      <form id="search-form" class="form show">
+        <input type="text" placeholder="Search" class="input-form" id="search-input">
+        <input type="submit" value="Search" class="btn btn-input btn-filter">
+      </form>
       <ul class="collections" id="task-list">
       </ul>
+      <a href="" class="btn show" id="clear">Clear Tasks</a>
     </div>
   </div>
   <script src="app.js"></script>

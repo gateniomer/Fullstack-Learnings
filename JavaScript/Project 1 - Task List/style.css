@@ -26,7 +26,7 @@ body{
   color: #838383;
 }
 
-#task-form{
+.form{
   display: flex;
   margin-top: 20px;
 }
@@ -39,15 +39,28 @@ body{
   border-right: 0;
 }
 
+#search-form{
+  justify-content: center;
+}
+
 .btn{
   border:3px solid #333;
-  border-left: 0;
   padding: .5rem 1.3rem;
   cursor: pointer;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px 10px 10px 10px;
   color:#fff;
-  font-weight: 600;
+  font-weight: bold;
   background: blueviolet;
+  text-decoration: none;
+}
+
+.btn-input{
+  border-radius: 0px 10px 10px 0px;
+  border-left: 0;
+}
+
+.btn-filter{
+  background: #333;
 }
 
 .collections{

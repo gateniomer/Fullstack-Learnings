@@ -2,23 +2,25 @@ const form = document.querySelector('#task-form');
 const taskList = document.querySelector('#task-list');
 const taskInput = document.querySelector('#task-input');
 const noTaskMessage = document.querySelector('.no-task-message');
-
+const clearBtn = document.querySelector('#clear');
+const searchForm = document.querySelector('#search-form');
+const card = document.querySelector('.card');
 
 checkForTasks();
 loadEventListeners();
 
 function checkForTasks(){
   const childCount=taskList.childElementCount;
-  if(childCount !== 0){
-    noTaskMessage.innerText=`${childCount} Tasks To Complete`;
-  }else{
-    noTaskMessage.innerText='No Tasks Available';
-  }
+  
+  taskToComplete(childCount);
+  show(childCount);
 }
 
 function loadEventListeners() {
   //Add Task Event
   form.addEventListener('submit',addTask);
+  taskList.addEventListener('click',deleteTask);
+  clearBtn.addEventListener('click',deleteAllTasks);
 }
 
 function addTask(e){
@@ -43,15 +45,56 @@ function addTask(e){
   const deleteLink = document.createElement('a');
 
   deleteLink.className='delete';
-  deleteLink.innerHTML='<p>⌫</p>';
-  deleteLink.addEventListener('click',function(e){
-    deleteLink.parentElement.remove();
-    checkForTasks();
-  });
+  deleteLink.innerText='⌫';
   li.appendChild(deleteLink);
 
   taskList.appendChild(li);
   taskInput.value='';
 
   checkForTasks();
+}
+
+function deleteTask(e){
+  if(e.target.classList.contains('delete')){
+    if(confirm('Are you sure you want to delete this task?')){
+    e.target.parentElement.remove();
+    checkForTasks();
+    }
+  }
+}
+
+function deleteAllTasks(e){
+  e.preventDefault();
+  // //slower
+  // let len = taskList.childElementCount;
+  // console.log(taskList.childCount);
+  // for(let i=0;i<len;i++){
+  //   taskList.children[0].remove();
+  // }
+
+  //faster
+  while(taskList.firstChild){
+    taskList.removeChild(taskList.firstChild);
+  }
+  checkForTasks();
+}
+
+function taskToComplete(childNum){
+  if(childNum !== 0){
+    noTaskMessage.innerText=`${childNum} Tasks To Complete`;
+    
+  }else{
+    noTaskMessage.innerText='No Tasks Available';
+  }
+}
+
+function show(childNum){
+  for(let i=0;i<card.childElementCount;i++){
+    if(card.children[i].classList.contains('show')){
+      if(childNum!== 0)
+        card.children[i].style.visibility='visible';
+      else
+        card.children[i].style.visibility='hidden';
+    }
+  }
 }
