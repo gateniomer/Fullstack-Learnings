@@ -12,6 +12,7 @@ body{
 .container{
   width: 600px;
   margin: 0 auto;
+  padding: 1rem 0;
 }
 
 .card{
@@ -117,4 +118,13 @@ body{
   .container{
     width: 90%;
   }
+  .card{
+    padding:1.5rem;
+  }
+  .collections{
+    padding:1rem 0 1rem 0;
+  }
+  #task-form{
+  justify-content: center;
+}
 }
