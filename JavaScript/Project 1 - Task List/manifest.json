@@ -1,0 +1,13 @@
+{
+  "short_name": "Simple Task List",
+  "name": "Simple Task List",
+  "display": "standalone",
+  "icons": [
+    {
+      "src" : "icon.png",
+      "type": "image/svg+xml",
+      "sizes": "250x250"
+    }
+  ],
+  "description": "Simple Task List"
+}
