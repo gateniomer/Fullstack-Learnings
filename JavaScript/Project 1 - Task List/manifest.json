@@ -9,5 +9,6 @@
       "sizes": "250x250"
     }
   ],
-  "description": "Simple Task List"
+  "description": "Simple Task List",
+  "offline_enabled": true
 }
