@@ -1,6 +1,13 @@
 # Full-Stack Journey
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 22.3.22 - Simple Task List!
+Today, I made my first web app using what I learned so far.
+
+A simple task list with filter and local save capabilities.
+
+Looking forward to learn about OOP in JS.
+
 ## 📅 21.3.22 - The DOM
 Today, I learned about the DOM and how to manipulate elements.
 
