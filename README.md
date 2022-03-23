@@ -1,6 +1,18 @@
 # Full-Stack Journey
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 23.3.22 - OOP
+Today, I learned about oop and made small project using both es5 and es6:
+- Contstructer function
+- Object litral
+- Object.create()
+- Object's prototype
+- Inheritance
+- "this" & "new" keyword
+- Classes
+
+Looking forward to learn more advanced JS.
+
 ## 📅 22.3.22 - Simple Task List!
 Today, I made my first web app using what I learned so far.
 
