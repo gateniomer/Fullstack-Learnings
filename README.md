@@ -1,6 +1,16 @@
 # Full-Stack Journey
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 24.3.22 - More Advanced JS
+Today, I learned more advance concepts in JS:
+- Asynchronous Vs Synchronous
+- Callback functions
+- AJAX & JSON
+- API & REST API
+- HTTP Protocol
+
+Looking forward to learn more advanced JS.
+
 ## 📅 23.3.22 - OOP
 Today, I learned about oop and made small project using both es5 and es6:
 - Contstructer function
