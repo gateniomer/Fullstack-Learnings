@@ -8,5 +8,5 @@ ajax.get('https://cat-fact.herokuapp.com/facts',function(result){
 
 ajax.get('https://cat-fact.herokuapp.com/facts',function(result){
   const test = result;
-  document.querySelector('.container').innerHTML+=`<h1>test</h1>`;
+  document.querySelector('.container').innerHTML+=`<h1>${test}</h1>`;
 });
