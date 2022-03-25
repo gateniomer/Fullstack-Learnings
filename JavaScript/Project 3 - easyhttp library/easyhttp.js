@@ -4,7 +4,7 @@ function easyHTTP() {
 
 // Make an HTTP GET Request
 easyHTTP.prototype.get = function(url, callback) {
-  this.http.open('GET', url, true);
+  this.http.open('GET', url);
 
   let self = this;
   this.http.onload = function() {
