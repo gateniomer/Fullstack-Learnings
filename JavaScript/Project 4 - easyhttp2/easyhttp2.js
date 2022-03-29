@@ -63,4 +63,15 @@ class easyHTTP2 {
       .catch(error => reject(error))
     })
   }
+
+  delete(url){
+    return new Promise((resolve,reject)=>{
+      fetch(url,{
+        method: 'DELETE'
+      })
+      .then(res => res.json())
+      .then(() => resolve('Deleted Succesfully!'))
+      .catch(error => reject(`Something Went Wrong! ${error}`))
+    })
+  }
 }
