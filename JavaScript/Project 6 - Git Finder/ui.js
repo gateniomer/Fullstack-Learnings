@@ -4,7 +4,7 @@ class UI{
   }
 
   showProfile(user){
-    console.log(user);
+    const git = new Github;
     this.profile.innerHTML = `
     <div class="card card-body mb-3">
         <div class="row">
@@ -17,6 +17,12 @@ class UI{
             <span class="badge bg-secondary">Public Gists: ${user.public_gists}</span>
             <span class="badge bg-success">Followers: ${user.followers}</span>
             <span class="badge bg-info">Following: ${user.following}</span>
+
+            <br><br>
+
+            <span class="badge bg-primary">Languages: ${user.repos_url[0]}</span>
+
+
             <br><br>
             <ul class="list-group">
               <li class="list-group-item">Company: ${user.company}</li>
