@@ -19,11 +19,6 @@ class UI{
             <span class="badge bg-info">Following: ${user.following}</span>
 
             <br><br>
-
-            <span class="badge bg-primary">Languages: ${user.repos_url[0]}</span>
-
-
-            <br><br>
             <ul class="list-group">
               <li class="list-group-item">Company: ${user.company}</li>
               <li class="list-group-item">Website/Blog: ${user.blog}</li>
