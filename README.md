@@ -1,6 +1,20 @@
 # Full-Stack Journey
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 31.3.22 - A lot More Advanced JS!
+For the past week, I learned a lot more complicated concepts in JS:
+- Promises
+- Fetch
+- Arrow functions
+- Async & Await
+- Error handling with try & catch
+- Regular Expressions
+- Working with REST API's
+
+Those concepts were hard to grasp! Learning from varius different resources and practice by doing mini projects made it easier to understand.
+
+Looking forward to learn more advanced JS.
+
 ## 📅 24.3.22 - More Advanced JS
 Today, I learned more advance concepts in JS:
 - Asynchronous Vs Synchronous
