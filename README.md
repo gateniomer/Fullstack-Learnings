@@ -1,6 +1,32 @@
 # Full-Stack Journey
 In 6.2.22, I started my first steps in my journey to become a Full-Stuck developer.
 
+## 📅 5.4.22 - Finished JS?
+Woohoo! Just finished my JS course!
+In the past week I learned alot of advanced concepts like:
+- Generators
+- Symbols
+- Maps & Sets
+- Destructuring
+- Basics of design patterns (module,singleton,observer,state..)
+
+**I am now closing 2 months since I began my journy to become fullstack developer.**
+
+Up to this point I finished learning:
+
+- Html&CSS
+- Bootstrap
+- Basics + Advanced JS
+
+I'v learned alot, and Im right on schedul!
+
+### So what's next?
+Before diving into learning font/back frameworks (which will probably be React & NodeJs), I want to dive even DEEPER into JavaScript!
+
+I will start another more advanced course on JS while making alot of small projects combining what I learned so far.
+
+Wish me luck!
+
 ## 📅 31.3.22 - A lot More Advanced JS!
 For the past week, I learned a lot more complicated concepts in JS:
 - Promises
