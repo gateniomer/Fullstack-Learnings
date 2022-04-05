@@ -10,7 +10,7 @@ In the past week I learned alot of advanced concepts like:
 - Destructuring
 - Basics of design patterns (module,singleton,observer,state..)
 
-**I am now closing 2 months since I began my journy to become fullstack developer.**
+**I am now closing 2 months since I began my journey to become fullstack developer.**
 
 Up to this point I finished learning:
 
