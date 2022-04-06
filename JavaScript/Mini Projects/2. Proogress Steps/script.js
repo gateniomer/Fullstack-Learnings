@@ -9,8 +9,10 @@ const prevBtn = document.querySelector('#prev');
 const addBtn = document.querySelector('#add');
 const removeBtn = document.querySelector('#remove');
 
+//Progression step
 let step = 1;
 
+//Circles event listener
 container.addEventListener('click', e =>{
   if(e.target.classList.contains('circle')){
     const circlesArray = Array.from(circles);
@@ -47,8 +49,7 @@ addBtn.addEventListener('click',e=>{
 removeBtn.addEventListener('click',e=>{
   const lastStep = container.lastElementChild;
   lastStep.remove();
-  circles = document.querySelectorAll('.circle');
-  console.log(circles.length);
+  circles = document.querySelectorAll('.circle')
   changeProgress();
   changeBtnState();
 });
