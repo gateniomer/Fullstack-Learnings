@@ -2,10 +2,11 @@ const searchBtn = document.querySelector('.btn');
 
 const search = document.querySelector('.search')
 
+const input = document.querySelector('.input');
+
 searchBtn.addEventListener('click',()=>{
-  if(!search.classList.contains('active')){
-    search.classList.add('active');
-  } else{
-    search.classList.remove('active');
+  search.classList.toggle('active');
+  if(search.classList.contains('active')){
+    setTimeout(()=>input.focus(),100);
   }
 });
