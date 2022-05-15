@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.col{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 100%;
+  border:1px solid #fff;
+  background-color: #333;
+  transition: flex .5s ease;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: difference;
+  padding: 2rem 1rem;
+}
+.col:hover{
+  flex:2;
+}
+.col h2{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.col p{
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.btn{
+  background-color: #333;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: .4rem .9rem;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.btn:hover{
+  background-color: #fff;
+  border: 2px solid #333;
+  color: #333;
+}
+
+.col.landing-1{
+  background-image: url('https://source.unsplash.com/random/1');
+}
+.col.landing-2{
+  background-image: url('https://source.unsplash.com/random/2');
+}
