@@ -24,7 +24,7 @@ function addCard(counter,body){
   const div = document.createElement('div');
   const h2 = document.createElement('h2');
   h2.textContent = counter;
-  div.className='card';
+  div.className='card show';
   div.appendChild(h2);
   body.appendChild(div);
   counter++;
