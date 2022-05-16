@@ -11,12 +11,8 @@ async function getJoke(){
   });
   const data = await response.json();
   loading.style.visibility='hidden';
-  return data.joke;
+  jokeHeading.innerText = data.joke;
 }
 
-jokeButton.addEventListener('click',()=>{
-  getJoke()
-  .then(joke => jokeHeading.innerText = joke)
-  .catch(err => console.log(err));
-});
+jokeButton.addEventListener('click',getJoke);
 
