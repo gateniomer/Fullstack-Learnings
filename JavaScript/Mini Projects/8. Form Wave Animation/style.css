@@ -14,4 +14,67 @@ body{
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background-color: #333;
+}
+
+form{
+  background-color: #444;
+  padding: 2rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+
+form .input-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  position:relative;
+  transition: all .5s ease;
+}
+
+form .input-wrapper label{
+  position: absolute;
+  color: #fff;
+}
+
+form .input-wrapper label span{
+  display: inline-block;
+  font-size: 1.3rem;
+  min-width: 5px;
+  transition: all 0.5s ease;
+}
+
+form .input-wrapper input{
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border:none;
+  border-bottom: 1px solid gray;
+  color: #fff;
+}
+form .input-wrapper input:focus,
+form .input-wrapper input:valid{
+  outline: 0;
+}
+
+form .input-wrapper input:focus + label span,
+form .input-wrapper input:not(:placeholder-shown) + label span
+{
+  color: #555;
+  transform:translateY(-20px);
+}
+
+form button{
+  display: inline-block;
+  width: 100%;
+  background-color: #333;
+  font-size: 1rem;
+  padding: .5rem 0;
+  border-radius: 10px;
+  color:#fff;
+  border:none;
+  margin-top: 1rem;
+  cursor: pointer;
 }
