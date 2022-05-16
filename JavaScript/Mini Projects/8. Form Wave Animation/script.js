@@ -15,18 +15,3 @@ labels.forEach(label =>{
   .map((char,index)=> `<span style="transition-delay:${index*50}ms">${char}</span>`)
   .join('');
 });
-
-inputs.forEach(input =>{
-  input.addEventListener('focus',e =>{
-    const label = e.target.parentElement.children[0];
-    const spans = Array.from(label.children);
-    spans.forEach(span => {
-      span.style.position = 'relative';
-      span.style.top = '-20px';
-    });
-  });
-  input.addEventListener('focusout',e =>{
-    const label = e.target.parentElement.children[0];
-    if(input.value==='') label.style.position = 'absolute';
-  });
-});
