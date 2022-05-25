@@ -21,35 +21,36 @@ async function requestImageAPI(){
   return response.url;
 }
 
-async function getImageFromArray(arr,index){
+async function updateImageArray(arr,index){
+  //if we tried to load a new image, request it and push to array
   if(typeof arr[index] === 'undefined'){
     const image = await requestImageAPI();
     arr.push(image);
+    //add dot if new image added
     addDot();
   }
-  return arr[index];
+  return arr;
 }
 
+//change background of body and slider
 function changeBackground(arr,index){
-  //disable buttons
-  buttons.forEach(button =>{
-    button.disabled = true;
-  })
-  
-  getImageFromArray(arr,index)
-  .then(img =>{
-    document.body.style.backgroundImage = `url(${img})`;
-    slider.style.backgroundImage = `url(${img})`;
+  //disable buttons UI
+  disableButtons(true);
+
+  updateImageArray(arr,index)
+  .then(arr =>{
+    //changing background
+    document.body.style.backgroundImage = `url(${arr[index]})`;
+    slider.style.backgroundImage = `url(${arr[index]})`;
     //enable buttons
-    buttons.forEach(button =>{
-      button.disabled = false;
-    })
-    updateDots(index);
+    disableButtons(false);
+    setCurrentDot(index);
   })
   .catch(err => console.log(err));
 }
 
-function updateDots(index){
+//set current dot by slide index
+function setCurrentDot(index){
   const dots = document.querySelectorAll('.dots div');
   const dotsArr = Array.from(dots);
   dotsArr.forEach((dot,i)=>{
@@ -61,6 +62,7 @@ function updateDots(index){
   });
 }
 
+//add new dot to container
 function addDot(){
   const dotDiv = document.querySelector('.slider .dots');
   const dot = document.createElement('div');
@@ -70,4 +72,11 @@ function addDot(){
   dot.style.margin = '2px';
   dot.style.backgroundColor = 'white';
   dotDiv.appendChild(dot);
+}
+
+function disableButtons(bool){
+  const buttonsArr = Array.from(buttons);
+  buttonsArr.forEach(button =>{
+    button.disabled = bool;
+  })
 }
