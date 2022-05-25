@@ -16,7 +16,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
+          <p onClick={()=> {
+            this.setState(
+            ()=>({name:'Omer!!!'}),
+            ()=>console.log(this.state));
+          }}>
             Hello my name is {this.state.name}
           </p>
           <a
