@@ -7,5 +7,5 @@ btn.addEventListener('click',function(e){
   ripple.style.left = `${e.clientX - e.target.offsetLeft}px`;
   this.appendChild(ripple);
 
-  setTimeout(()=>ripple.remove(),1000);
+  setTimeout(()=>ripple.remove(),500);
 });
