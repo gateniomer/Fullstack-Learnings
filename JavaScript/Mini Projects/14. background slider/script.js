@@ -1,8 +1,3 @@
-async function requestImage(){
-  const response = await fetch('https://source.unsplash.com/random');
-  return response.url;
-}
-
 const slider = document.querySelector('.slider');
 const arr = [];
 let index = 0;
@@ -21,14 +16,18 @@ slider.addEventListener('click',e=>{
   }
 });
 
-async function getImage(arr,index){
-  if(typeof arr[index] !== 'undefined'){
-    return arr[index];
-  }else{
-    const image = await requestImage();
+async function requestImageAPI(){
+  const response = await fetch('https://source.unsplash.com/random');
+  return response.url;
+}
+
+async function getImageFromArray(arr,index){
+  if(typeof arr[index] === 'undefined'){
+    const image = await requestImageAPI();
     arr.push(image);
-    return arr[index];
+    addDot();
   }
+  return arr[index];
 }
 
 function changeBackground(arr,index){
@@ -36,7 +35,8 @@ function changeBackground(arr,index){
   buttons.forEach(button =>{
     button.disabled = true;
   })
-  getImage(arr,index)
+  
+  getImageFromArray(arr,index)
   .then(img =>{
     document.body.style.backgroundImage = `url(${img})`;
     slider.style.backgroundImage = `url(${img})`;
@@ -44,7 +44,30 @@ function changeBackground(arr,index){
     buttons.forEach(button =>{
       button.disabled = false;
     })
-    console.log(arr);
+    updateDots(index);
   })
   .catch(err => console.log(err));
+}
+
+function updateDots(index){
+  const dots = document.querySelectorAll('.dots div');
+  const dotsArr = Array.from(dots);
+  dotsArr.forEach((dot,i)=>{
+    if(i===index){
+      dot.style.backgroundColor = 'grey';
+    }else{
+      dot.style.backgroundColor = 'white';
+    }
+  });
+}
+
+function addDot(){
+  const dotDiv = document.querySelector('.slider .dots');
+  const dot = document.createElement('div');
+  dot.style.width = '10px';
+  dot.style.height = '10px';
+  dot.style.borderRadius = '50%';
+  dot.style.margin = '2px';
+  dot.style.backgroundColor = 'white';
+  dotDiv.appendChild(dot);
 }
