@@ -22,14 +22,13 @@ async function requestImageAPI(){
 }
 
 async function updateImageArray(arr,index){
+  const newarr=[...arr];
   //if we tried to load a new image, request it and push to array
-  if(typeof arr[index] === 'undefined'){
+  if(typeof newarr[index] === 'undefined'){
     const image = await requestImageAPI();
-    arr.push(image);
-    //add dot if new image added
-    addDot();
+    newarr.push(image);
   }
-  return arr;
+  return newarr;
 }
 
 //change background of body and slider
@@ -38,7 +37,12 @@ function changeBackground(arr,index){
   disableButtons(true);
 
   updateImageArray(arr,index)
-  .then(arr =>{
+  .then(newarr =>{
+    //add dot if new image added
+    if(newarr.length>arr.length) addDot();
+    //updating old arr to new arr
+    arr.length=0;
+    arr.push.apply(arr,newarr);
     //changing background
     document.body.style.backgroundImage = `url(${arr[index]})`;
     slider.style.backgroundImage = `url(${arr[index]})`;
