@@ -17,7 +17,7 @@ html{
 
 html.dark{
   --primary-color: #fff;
-  --secondary-color: #333;
+  --secondary-color: #000;
 }
 
 html.dark{
