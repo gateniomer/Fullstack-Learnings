@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  /* background-image: url('https://source.unsplash.com/random'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all .5s ease;
+}
+
+.slider{
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 80vw;
+  height: 70vh;
+  background-color: aliceblue;
+  /* background-image: url('https://source.unsplash.com/random'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 20px 20px 10px black;
+  transition: all .5s ease;
+}
+
+.slider button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: brown;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  color: white;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider .dots{
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: blueviolet;
+  bottom: 0;
+  left: 0;
+}
