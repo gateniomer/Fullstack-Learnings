@@ -3,16 +3,16 @@ const arr = [];
 let index = 0;
 const buttons = document.querySelectorAll('.slider button');
 
-changeBackground(arr,index);
+updateUI(arr,index);
 
 slider.addEventListener('click',e=>{
   if(e.target.id==='prev'){
     if(index!==0) index--;
-    changeBackground(arr,index);
+    updateUI(arr,index);
   }
   if(e.target.id==='next'){
     index++;
-    changeBackground(arr,index);
+    updateUI(arr,index);
   }
 });
 
@@ -32,10 +32,10 @@ async function updateImageArray(arr,index){
 }
 
 //change background of body and slider
-function changeBackground(arr,index){
+function updateUI(arr,index){
   //disable buttons UI
   disableButtons(true);
-
+  //update background of body and slider
   updateImageArray(arr,index)
   .then(newarr =>{
     //add dot if new image added
