@@ -1,13 +1,15 @@
 import {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CardList from './components/card-list/card-list.component';
 
 class App extends Component {
   constructor(){
     super();
 
     this.state = {
-      monsters: []
+      monsters: [],
+      searchField: ''
     }
     console.log('Constructor');
   }
@@ -17,18 +19,31 @@ componentDidMount(){
   .then(response => response.json())
   .then(data => this.setState(()=>{
      return {monsters: data}
-  },()=>{
-    console.log(this.state);
   }))
   .catch(err => console.log(err))
 }
+
+onSearchChanged = (event)=>{
+  const searchField = event.target.value;
+  this.setState(()=>{
+    return {
+      searchField
+    }
+  })
+}
+
   render(){
     console.log('render');
+
+    //Destructuring
+    const {monsters,searchField} = this.state;
+    const {onSearchChanged} = this;
+
+    const filteredMonsters = monsters.filter(monster=>monster.name.toLowerCase().includes(searchField.toLowerCase()))
     return (
       <div className="App">
-        {
-        this.state.monsters.map(monster => <h1 key={monster.id}>{monster.name}</h1>)
-        }
+        <input className='search-box' type='search' placeholder='type name'onChange={onSearchChanged}/>
+        <CardList monsters={filteredMonsters}/>
       </div>
     );
   }
