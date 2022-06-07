@@ -1,10 +1,13 @@
-import {createCotnext} from 'react';
+import {createContext,useState} from 'react';
 
 //as the actual value you want to access
-export const UserContext = createCotnext({
-
+export const UserContext = createContext({
+  currentUser: null,
+  setCurrentUser: () => null
 });
 
 export const UserProvider = ({children}) => {
-  return <UserContext.Provider>{children}</UserContext.Provider>
+  const [currentUser,setCurrentUser] = useState(null);
+  const value = {currentUser,setCurrentUser};
+  return <UserContext.Provider value={value}>{children}</UserContext.Provider>
 }
