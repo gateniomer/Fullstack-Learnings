@@ -1,4 +1,5 @@
-import { createContext, useState,useEffect,useReducer } from "react";
+import { createContext,useReducer } from "react";
+import { createAction } from "../utils/reducer/reducer.utils";
 
 export const CartContext = createContext({
   isCartOpen: false,
@@ -78,11 +79,11 @@ export const CartProvider = ({children})=>{
   const updateCartItemsReducer = (newCartItems)=>{
     const newCount = newCartItems.reduce((total,item)=>total+=item.quantity,0);
     const newTotal = newCartItems.reduce((total,{quantity,price})=>total+=quantity*price,0);
-    dispatch({type:CART_ACTION_TYPES.SET_CART_ITEMS,payload:{
+    dispatch(createAction(CART_ACTION_TYPES.SET_CART_ITEMS,{
       cartItemCount: newCount,
       total: newTotal,
       cartItems: newCartItems
-    }})
+    }))
   }
 
   const addItemToCart = (item) => {
@@ -101,7 +102,7 @@ export const CartProvider = ({children})=>{
   }
 
   const setIsCartOpen = (bool)=>{
-    dispatch({type:CART_ACTION_TYPES.SET_IS_CART_OPEN,payload:bool});
+    dispatch(createAction(CART_ACTION_TYPES.SET_IS_CART_OPEN,bool));
   }
   
 
