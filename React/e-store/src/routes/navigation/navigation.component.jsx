@@ -13,10 +13,17 @@ import { NavigationContainer,LogoContainer,NavLinks,NavLink } from "./navigation
 import { useSelector } from "react-redux";
 import { selectCurrentUser } from "../../store/user/user.selectors";
 import { selectIsCartOpen } from "../../store/cart/cart.selectors";
+import { signOutStart } from "../../store/user/user.action";
+import { useDispatch } from "react-redux";
 
 const Navigation = () =>{
   const currentUser = useSelector(selectCurrentUser);
-  const isCartOpen = useSelector(selectIsCartOpen)
+  const isCartOpen = useSelector(selectIsCartOpen);
+  const dispatch = useDispatch();
+
+  const signOutHandler = () => {
+    dispatch(signOutStart());
+  }
 
   return (
     <Fragment>
@@ -29,7 +36,7 @@ const Navigation = () =>{
             SHOP
           </NavLink>
           {
-            currentUser ? (<NavLink as='span' onClick={signOutUser}>
+            currentUser ? (<NavLink as='span' onClick={signOutHandler}>
             Sign Out
             </NavLink>) : (<NavLink to='/auth'>
             Sign In

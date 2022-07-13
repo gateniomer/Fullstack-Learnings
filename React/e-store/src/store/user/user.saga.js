@@ -1,7 +1,7 @@
 import { takeLatest,put,all,call, take } from "redux-saga/effects";
 import { USER_ACTION_TYPE } from "./user.types";
-import { signInSuccess,signInFailed,signUpFailed, signUpSuccess } from "./user.action";
-import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth, getCurrentUser } from "../../utils/firebase/firebase.utils";
+import { signInSuccess,signInFailed,signUpFailed, signUpSuccess, signOutFailed, signOutSuccess } from "./user.action";
+import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth, getCurrentUser, signOutUser } from "../../utils/firebase/firebase.utils";
 import { signInWithGooglePopup,signInAuthUserWithEmailAndPassword } from "../../utils/firebase/firebase.utils";
 
 export function* getSnapshotFromUserAuth(userAuth, additionalDetails){
@@ -34,7 +34,6 @@ export function* signInWithGoogle(){
 
 export function* signInWithEmail({payload:{email,password}}){
   try{
-    console.log(email,password);
     const {user} = yield call(signInAuthUserWithEmailAndPassword,email,password);
     yield call(getSnapshotFromUserAuth,user);
   }catch(error){
@@ -53,6 +52,16 @@ export function* signUp({payload:{email,password,displayName}}){
 
 export function* signInAfterSignUp({payload: {user,additionalDetails}}){
   yield call(getSnapshotFromUserAuth,user,additionalDetails);
+}
+
+export function* signOut(){
+  try{
+    const user = yield call(signOutUser);
+    console.log(user);
+    yield put(signOutSuccess());
+  }catch(error){
+    yield put(signOutFailed(error));
+  }
 }
 
 export function* onEmailSignInStart(){
@@ -74,6 +83,9 @@ export function* onSignUpStart(){
 export function* onSignUpSuccess(){
   yield takeLatest(USER_ACTION_TYPE.SIGN_UP_SUCCESS,signInAfterSignUp);
 }
+export function* onSignOutStart(){
+  yield takeLatest(USER_ACTION_TYPE.SIGN_OUT_START,signOut);
+}
 
 export function* userSagas(){
   yield all([
@@ -82,5 +94,6 @@ export function* userSagas(){
     call(onEmailSignInStart),
     call(onSignUpStart),
     call(onSignUpSuccess),
+    call(onSignOutStart),
     ])
 }
