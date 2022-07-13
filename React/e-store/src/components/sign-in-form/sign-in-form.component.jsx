@@ -2,13 +2,13 @@
 // We learned about setting an object, but only when that object is always going to be tied together to some specific logic.
 
 import { 
-  signInWithGooglePopup,
-  createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils'
 import { useState } from "react";
 import FormInput from "../form-input/form-input.component";
 import './sign-in-form.styles.scss';
 import Button,{BUTTON_TYPE_CLASSES} from "../button/button.component";
+import {useDispatch} from 'react-redux';
+import {googleSignInStart,emailSignInStart} from '../../store/user/user.action'
 
 const defaultFormFields = {
   email: '',
@@ -17,6 +17,7 @@ const defaultFormFields = {
 const SignInForm = () => {
   const [formFields,setFormFields] = useState(defaultFormFields);
   const {email,password} = formFields;
+  const dispatch = useDispatch();
 
   const handleChange = (event) => {
     const {name, value} = event.target;
@@ -31,7 +32,7 @@ const SignInForm = () => {
     event.preventDefault();
 
     try{
-      const {user} = await signInAuthUserWithEmailAndPassword(email,password);
+      dispatch(emailSignInStart(email,password));
       resetFormFields();
     }catch(e){
       switch(e.code){
@@ -49,7 +50,7 @@ const SignInForm = () => {
   }
 
   const signInWithGoogle = async () =>{
-    await signInWithGooglePopup();
+    dispatch(googleSignInStart());
   }
 
   return(
