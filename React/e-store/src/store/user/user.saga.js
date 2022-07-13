@@ -56,8 +56,7 @@ export function* signInAfterSignUp({payload: {user,additionalDetails}}){
 
 export function* signOut(){
   try{
-    const user = yield call(signOutUser);
-    console.log(user);
+    yield call(signOutUser);
     yield put(signOutSuccess());
   }catch(error){
     yield put(signOutFailed(error));
