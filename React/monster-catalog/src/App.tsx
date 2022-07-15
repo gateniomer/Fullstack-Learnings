@@ -1,12 +1,23 @@
-import {Component} from 'react';
-import logo from './logo.svg';
+import {ChangeEvent, Component} from 'react';
 import './App.css';
 import CardList from './components/card-list/card-list.component';
 import SearchBox from './components/search-box/search-box.component';
+import { getData } from './utils/data.utils';
 
-class App extends Component {
-  constructor(){
-    super();
+type Monster = {
+  id: string,
+  name: string,
+  email: string
+}
+
+type State = {
+  monsters: Monster[],
+  searchField: string
+}
+
+class App extends Component<{},State> {
+  constructor(props: {}){
+    super(props);
 
     this.state = {
       monsters: [],
@@ -16,15 +27,20 @@ class App extends Component {
   }
 componentDidMount(){
   console.log('componentDidMount');
-  fetch('https://jsonplaceholder.typicode.com/users')
-  .then(response => response.json())
-  .then(data => this.setState(()=>{
-     return {monsters: data}
-  }))
-  .catch(err => console.log(err))
+  // fetch('https://jsonplaceholder.typicode.com/users')
+  // .then(response => response.json())
+  // .then(data => this.setState(()=>{
+  //    return {monsters: data}
+  // }))
+  // .catch(err => console.log(err))
+  const fetchMonsters = async () =>{
+    const data = await getData<Monster[]>('https://jsonplaceholder.typicode.com/users');
+    this.setState(()=>({monsters:data}))
+  }
+  fetchMonsters();
 }
 
-onSearchChanged = (event)=>{
+onSearchChanged = (event: ChangeEvent<HTMLInputElement>) => {
   const searchField = event.target.value;
   this.setState(()=>{
     return {
