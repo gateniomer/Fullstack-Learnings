@@ -3,8 +3,13 @@ import {Component} from 'react';
 import './card-list.styles.css';
 
 import Card from '../card/card.component'
+import type {Monster} from '../../App';
 
-class CardList extends Component {
+type Props = {
+  monsters:Monster[]
+}
+
+class CardList extends Component<Props> {
   render(){
     const {monsters} = this.props;
     return (

@@ -1,8 +1,13 @@
 import { Component } from "react";
+import { Monster } from "../../App";
 
 import './card.styles.css';
 
-class Card extends Component{
+type Props = {
+  monster:Monster
+}
+
+class Card extends Component<Props>{
   render(){
     const {id,name,email} = this.props.monster;
     return(
