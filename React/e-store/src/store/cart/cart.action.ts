@@ -1,7 +1,7 @@
 import { createAction } from "../../utils/reducer/reducer.utils"
 import { CART_ACTION_TYPES } from "./cart.types"
 
-export const setIsCartOpen = (bool) => createAction(CART_ACTION_TYPES.SET_IS_CART_OPEN,bool);
+export const setIsCartOpen = (bool:Boolean) => createAction(CART_ACTION_TYPES.SET_IS_CART_OPEN,bool);
 
 const addCartItem = (cartItems,itemToAdd) => {
   const obj = cartItems.find( (item) => item.id === itemToAdd.id);
