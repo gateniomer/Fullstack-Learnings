@@ -1,7 +1,7 @@
 // The key thing here is that we learned a new pattern with you state.
 // We learned about setting an object, but only when that object is always going to be tied together to some specific logic.
 
-import { useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import { createAuthUserWithEmailAndPassword,createUserDocumentFromAuth } from "../../utils/firebase/firebase.utils";
 import FormInput from "../form-input/form-input.component";
 import './sign-up-form.styles.scss';
@@ -20,7 +20,7 @@ const SignUpForm = () => {
   const {displayName,email,password,confirmPassword} = formFields;
   const dispatch = useDispatch();
 
-  const handleChange = (event) => {
+  const handleChange = (event:ChangeEvent<HTMLInputElement>) => {
     const {name, value} = event.target;
     setFormFields({...formFields, [name]: value});
   }
@@ -29,7 +29,7 @@ const SignUpForm = () => {
     setFormFields(defaultFormFields);
   }
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event:FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if(password !== confirmPassword){
       alert('Password does not match!');

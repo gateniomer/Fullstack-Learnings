@@ -3,7 +3,7 @@
 
 import { 
   signInAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils'
-import { useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import FormInput from "../form-input/form-input.component";
 import './sign-in-form.styles.scss';
 import Button,{BUTTON_TYPE_CLASSES} from "../button/button.component";
@@ -19,7 +19,7 @@ const SignInForm = () => {
   const {email,password} = formFields;
   const dispatch = useDispatch();
 
-  const handleChange = (event) => {
+  const handleChange = (event:ChangeEvent<HTMLInputElement>) => {
     const {name, value} = event.target;
     setFormFields({...formFields, [name]: value});
   }
@@ -28,14 +28,15 @@ const SignInForm = () => {
     setFormFields(defaultFormFields);
   }
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event:FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     try{
       dispatch(emailSignInStart(email,password));
       resetFormFields();
     }catch(e){
-      switch(e.code){
+      console.log('test');
+      switch(e){
         case 'auth/user-not-found':
           alert('auth/user-not-found');
           break;
@@ -43,7 +44,7 @@ const SignInForm = () => {
           alert('auth/wrong-password');
           break;
         default:
-          console.log(e);
+          console.log('test',e);
       }
     }
     
